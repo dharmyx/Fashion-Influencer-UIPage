@@ -1,19 +1,1351 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
- body {
-    background-color: #f2f2f2;
-    border: 1px solid;
+
+
+/*LANDING SECTION*/
+
+section#landingPage--content {
+    padding: 1rem 0;
+    height: auto;
+    background-image: url(Assets_Doc/girl5edit.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-main {
-    border: 1px solid;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 3rem;
+}
+
+p.shoplink>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f7f8fa;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    letter-spacing: 8px;
+}
+
+p.headerlogo>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f7f8fa;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 11px;
+}
+
+div.cartitems {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+p.cart,
+p.cart>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f7f8fa;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    letter-spacing: 8px;
+}
+
+div.barline {
+    position: relative;
+    bottom: 5px;
+    width: 25px;
+    height: 2px;
+    align-self: flex-end;
+    display: flex;
+    background-color: #f7f8fa;
+}
+
+div.barline:before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    top: -8px;
+    background-color: #f7f8fa;
+}
+
+div.top-section {
+    width: 100%;
+    height: 57vh;
+    border: 1px solid rgb(247, 248, 250, .3);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: flex;
+}
+
+div.checkmore {
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgb(247, 248, 250, .3);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0 0 5rem;
+}
+
+p.check>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(247, 248, 250, .8);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    letter-spacing: 8px;
+}
+
+a >img.arrow-right {
+    margin: 2rem 0 2rem -2rem;
+    color: rgb(247, 248, 250, .8);
+}
+a >img.arrow-right:hover {
+    transition: ease-in-out .8s;
+    transform: rotate(90deg);
+}
+
+p.sarah {
+    align-self: flex-end;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 5rem;
+    color: #f7f8fa;
+    margin-left: -7rem;
+    z-index: 3;
+}
+
+p.meet > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f7f8fa;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    letter-spacing: 1.5rem;
+    line-height: 2rem;
+    padding: 2rem 0;
+}
+
+div.slantline {
+    position: relative;
+    top: 50px;
+    left: 220px;
+    width: 550px;
+    height: 2px;
+    background-color: #FF5D00;
+    transform: rotate(118deg);
+    z-index: 1;
+}
+
+div.bottom-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: ". a b .";
+    width: 100%;
+    height: 57vh;
+    z-index: 5;
+}
+div.preset {
+    grid-area: a;
+}
+div.check-story {
+    grid-area: b;
+}
+
+div.social-text {
+    display: flex;
+    align-items: flex-end;
+    margin: 2rem 3rem;
+}
+
+p.youtube>a,
+p.instagram>a {
+    padding-right: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #f7f8fa;
+    font-family: 'Mulish', sans-serif;
+    font-size: .8rem;
+}
+
+p.present {
+    align-self: flex-start;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 4.8rem;
+    color: #f7f8fa;
+    margin: -1rem 10rem 0 12.5rem;
+    width: fit-content;
+}
+
+p.select {
+    font-size: .9rem;
+    color: rgb(247, 248, 250, .8);
+    margin: 1rem 10rem 0 12.5rem;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+div.check-story {
+    margin: auto 5rem;
+    display: flex;
+    align-self: center;
+}
+
+p.story>a {
+    text-transform: capitalize;
+    color: #f7f8fa;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 2.2rem;
+}
+
+div.social-text2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 2rem 3rem;
+}
+
+p.sub>a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #f7f8fa;
+    font-family: 'Mulish', sans-serif;
+    font-size: .8rem;
+}
+
+
+/*MEET ME SECTION*/
+
+section#meet--me {
+    padding: 5rem 0 8rem;
+}
+div.meet-me {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+p.meetme {
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-size: .7rem;
+    letter-spacing: 6px;
+    padding: 0 0 5rem 0;
+}
+p.hey-sarah {
+    text-transform: capitalize;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 3.5rem;
+    color: #363636;
+}
+p.designer {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 2.8rem;
+    color: #363636;
+    padding: 7px 0;
+}
+p.more > a {
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-size: .7rem;
+    letter-spacing: 12px;
+    text-decoration: none;
+    border-bottom: 2px solid #fa6a18;
+    color: #FA6A18;
+}
+span.about {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 2.5rem;
+    color: #363636;
+}
+
+/*SERVICES SECTION*/
+
+section#services {
+    height: auto;
+    padding: 1rem 0 4rem;
+    background-color: rgb(0, 0, 0);
+}
+div.what-i-do {
+    position: relative;
+    height: auto;
+}
+p.just-a-bit {
+    color: #ffffff;
+    padding: 5rem 5rem 0;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-size: .7rem;
+    letter-spacing: 20px;
+    line-height: 50px;
+}
+div.collections {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    z-index: 999;
+}
+div.collections > p.textz {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 40px;
+    letter-spacing: 5px;
+}
+div.collections > p.services > a {
+    display: inline-block;
+    color: #FA6A18;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: .7rem;
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin: 2rem 0;
+} 
+a > img.arrow-down {
+    width: 40px;
+    height: 70px;
+}
+div.pic1 {
+    position: absolute;
+    top: -80px;
+    right: 100px;
+    width: 140px;
+    height: 150px;
+    background-image: url(Assets_Doc/girl13edit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+div.pic2 {
+    position: absolute;
+    top: 68px;
+    right: 490px;
+    width: 150px;
+    height: 180px;
+    background-image: url(Assets_Doc/girl12edit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+div.pic3 {
+    position: absolute;
+    bottom: 110px;
+    right: 0;
+    width: 160px;
+    height: 190px;
+    background-image: url(Assets_Doc/girl8edit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+div.pic4 {
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+    width: 190px;
+    height: 210px;
+    margin: 0 0 0 5rem;
+    background-image: url(Assets_Doc/girlorange2edit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    z-index: 999;
+}
+
+/*PLAY VIDEO SECTION*/
+
+section#play-video {
+    position: relative;
+    height: auto;
+    padding: 10px;
+    background-image: url(Assets_Doc/girl33edit.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.playVideo {
+    width: 45%;
+    height: auto;
+    margin: 8rem auto 2rem;
+}
+div.video-key > a {
+    border: 1px solid rgb(0, 0, 0, .5);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 3rem auto;
+    text-decoration: none;
+    color: #363636;
+}
+img.playbtn {
+    margin: 0 1rem;
+}
+p.pressplay {
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-size: .9rem;
+}
+p.some-text {
+    font-family: 'Mulish', sans-serif;
+    font-size: .8rem;
+    text-align: center;
+    padding: .8rem;
+    line-height: 27px;
+    letter-spacing: 10px;
+    color: #ffffff;
+}
+div.pic5 {
+    position: absolute;
+    top: -150px;
+    right: 80px;
+    width: 270px;
+    height: 320px;
+    margin: 0 0 0 5rem;
+    background-image: url(Assets_Doc/eggorange1edit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+/*MY PRODUCTS SECTION*/
+
+section#Products {
+    padding: 5rem 0 6rem;
+}
+p.my-products {
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-size: .7rem;
+    letter-spacing: 6px;
+    padding: 0 0 3rem 5rem;
+}
+div.products-category {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: auto;
+    padding: 0 5rem;
+}
+p.category > a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 70px;
+    letter-spacing: 5px;
+    color: #000000;
+}
+p.clothing {
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-size: .7rem;
+    letter-spacing: 20px;
+    line-height: 50px;
+}
+
+/*SHOPPING CATEGORY SECTION*/
+
+section#shopping-category {
+    background-color: #e8e8e8;
+    height: auto;
+    padding: 2rem 5rem;
+}
+div.shopping-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: auto;
+}
+div.bigShoppingImage {
+    width: 450px;
+    height: 600px;
+    margin: auto;
+    background-image: url(Assets_Doc/girl32edit.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.fancyhoop {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: space-evenly;
+}
+div > p.fancy {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #000000;
+    letter-spacing: 2px;
+}
+div > p.your {
+    font-family: 'Poppins', sans-serif;
+    font-size: .7rem;
+    font-weight: 300;
+    color: #000000;
+}
+span.plus {
+    font-size: 3.1rem;
+    color: #2B2B2B;
+}
+p.cloth {
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-size: .7rem;
+    letter-spacing: 6px;
+    text-align: center;
+    margin: 5rem auto;
+}
+div.smallShoppingImage {
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    background-image: url(Assets_Doc/girl26edit.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p.plain {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #000000;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 2rem 0 0;
+}
+p.available {
+    font-family: 'Poppins', sans-serif;
+    font-size: .7rem;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+}
+p.shopAll {
+    text-align: center;
+    padding: 6rem 0 0 0;
+}
+p.shopAll > a {
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-size: .7rem;
+    letter-spacing: 12px;
+    text-decoration: none;
+    border-bottom: 2px solid #fa6a18;
+    color: #FA6A18;
+}
+div#ideas {
+    width: 50%;
+    margin: 5rem auto 3rem;
+}
+p.hey {
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-size: .7rem;
+    letter-spacing: 6px;
+    padding: 0 0 4rem 0;
+    text-align: center;
+}
+p.talk {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 3.5rem;
+    color: #363636;
+    text-align: center;
+}
+p.if {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 2.8rem;
+    color: #363636;
+    padding: 7px 0;
+    text-align: center;
+}
+p.any {
+    text-align: center;
+}
+p.any > a {
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-size: .7rem;
+    letter-spacing: 12px;
+    text-decoration: none;
+    border-bottom: 2px solid #fa6a18;
+    color: #FA6A18;
+}
+span.collab {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 2.5rem;
+    color: #363636;
+}
+p.some-idea {
+    font-family: 'Mulish', sans-serif;
+    font-size: .8rem;
+    text-align: center;
+    padding: 2rem;
+    line-height: 27px;
+    letter-spacing: 10px;
+    color: #2d2d2d;
+}
+
+/*MORE INFO SECTION*/
+
+section#more--info {
+    height: auto;
+    background-color: rgba(0, 0, 0);
+    padding: 1rem 0;
+}
+div.more-information {
+    position: relative;
+    height: auto;
+}
+p.check-info {
+    color: #ffffff;
+    padding: 5rem 5rem 0;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-size: .7rem;
+    letter-spacing: 20px;
+    line-height: 50px;
+}
+div.info-collections {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    z-index: 2;
+}
+div.info-collections > p.textz {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 40px;
+    letter-spacing: 5px;
+} 
+p.some-info {
+    font-family: 'Mulish', sans-serif;
+    font-size: .8rem;
+    text-align: center;
+    padding: 2rem;
+    line-height: 27px;
+    letter-spacing: 10px;
+    color: #ffffff;
+}
+a > span.top {
+    font-size: 2rem;
+    color: #f7f8fa;
+    transform: rotate(-90deg);
+}
+div.pic-info1 {
+    position: absolute;
+    top: -90px;
+    left: 100px;
+    width: 140px;
+    height: 150px;
+    background-image: url(Assets_Doc/girl16edit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+div.pic-info2 {
+    position: absolute;
+    top: 68px;
+    right: 490px;
+    width: 150px;
+    height: 180px;
+    background-image: url(Assets_Doc/girl1edit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+div.socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*MEDIA QUERRIES SECTION*/
+@media (max-width: 1490px) {
+
+    div.top-section {
+        height: 45vh;
+    }
+    p.meet > a {
+        display: flex;
+        padding: 6rem 0;
+    }
+    div.bottom-section {
+        height: 45vh;
+    }
+    p.present {
+        margin: -1rem 0 0 0;
+    }
+    p.select {
+        margin: 1rem 0;
+    }
+    div.check-story {
+        margin: auto 6.5rem;
+        justify-content: flex-end;
+    }
+    div.pic2 {
+        right: 613px;
+    }
+    div.pic-info2 {
+        right: 604px;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    p.present {
+        margin: -1rem 0 0 3rem;
+    }
+    p.select {
+        margin: 1rem 0 0 3rem;
+    }
+    div.check-story {
+        margin: auto 0rem;
+    }
+    div.pic2 {
+        right: 490px;
+    }
+    div.pic-info2 {
+        right: 490px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    p.shoplink>a,
+    p.cart>a {
+        letter-spacing: 4px;
+    }
+    p.headerlogo>a {
+        letter-spacing: 8px;
+    }
+    div.top-section {
+        height: 40vh;
+    }
+    div.bottom-section {
+        height: 40vh;
+    }
+    div.checkmore {
+        width: 350px;
+        height: 350px;
+    }
+    p.sarah {
+        font-size: 3.91rem;
+        margin-left: -10rem;
+    }
+    p.meet > a {
+        letter-spacing: .9rem;
+    }
+    p.present {
+        margin: -1rem 0 0 3rem;
+    }
+    p.present {
+        font-size: 3.91rem;
+        margin: -1rem 5rem 0 4rem;
+    }
+    p.select {
+        margin: 1rem 4rem;
+    }
+    div.pic2 {
+        right: 370px;
+    }
+    div.pic-info2 {
+        right: 370px;
+    }
+}
+
+@media (max-width: 768px) {
+    p.shoplink>a,
+    p.cart>a {
+        letter-spacing: 1px;
+    }
+    p.headerlogo>a {
+        letter-spacing: 4px;
+    }
+    div.cartitems {
+        width: 120px;
+    }
+    div.top-section {
+        height: 25vh;
+    }
+    div.bottom-section {
+        height: 25vh;
+    }
+    div.checkmore {
+        width: 250px;
+        height: 250px;
+        margin: 1.5rem 0 0 3rem;
+    }
+    p.check>a {
+        font-size: .8rem;
+        letter-spacing: 4px;
+    }
+    a >img.arrow-right {
+        margin: 0 0 1rem -1rem;
+    }
+    p.sarah {
+        font-size: 3.4rem;
+        margin-left: -6rem;
+    }
+    div.slantline {
+        left: 127px;
+        width: 450px;
+    }
+    p.meet > a {
+        letter-spacing: 7px;
+        display: flex;
+        padding: 3rem 0;
+    }
+    p.present {
+        font-size: 3.4rem;
+        margin: -1rem 5rem 0 3rem;
+    }
+    p.story>a {
+        font-size: 1.55rem;
+    }
+    section#meet--me {
+        width: 85%;
+        margin: auto;
+        padding: 5rem 0 8rem;
+    }
+    p.hey-sarah {
+        font-size: 3rem;
+    }
+    p.designer {
+        font-size: 2rem;
+    }
+    span.about {
+        font-size: 2rem;
+    }
+    section#services {
+        height: auto;
+        padding: 0 0 3rem;
+        background-color: rgb(0, 0, 0);
+    }
+    div.pic1 {
+        top: -70px;
+        right: 50px;
+        width: 110px;
+        height: 130px;
+    }
+    div.pic2 {
+        top: 50px;
+        left: 400px;
+        width: 80px;
+        height: 140px;
+    }
+    div.pic3 {
+        bottom: 110px;
+        right: 0;
+        width: 130px;
+        height: 150px;
+    }
+    div.pic4 {
+        position: absolute;
+        bottom: -90px;
+        left: 0;
+        width: 120px;
+        height: 170px;
+        margin: 0 0 0 1rem;
+    }
+    p.just-a-bit {
+        padding: 3rem 3rem 0;
+        letter-spacing: 10px;
+        line-height: 35px;
+    }
+    div.collections > p.textz {
+        font-size: 1.5rem;
+    }
+    a > img.arrow-down {
+        width: 30px;
+        height: 50px;
+    }
+    section#play-video {
+        height: auto;
+    }
+    div.playVideo {
+        width: 85%;
+        height: auto;
+        margin: 1rem auto;
+    }
+    div.video-key > a {
+        width: 200px;
+        height: 200px;
+        margin: 2rem auto;
+    }
+    p.some-text {
+        font-size: .75rem;
+        line-height: 20px;
+        letter-spacing: 8px;
+    }
+    div.pic5 {
+        top: -120px;
+        right: 30px;
+        width: 180px;
+        height: 250px;
+        margin: 0 0 0 0rem;
+    }
+    p.my-products {
+        letter-spacing: 4px;
+        padding: 0 0 2rem 3rem;
+    }
+    div.products-category {
+        gap: 8rem;
+        padding: 0 3rem;
+    }
+    section#shopping-category {
+        padding: 2rem 3rem;
+    }
+    div.shopping-area {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    div.bigShoppingImage {
+        width: 100%;
+        height: 400px;
+    }
+    div > p.fancy {
+        font-size: .95rem;
+        letter-spacing: 0px;
+    }
+    span.plus {
+        font-size: 2.2rem;
+    }
+    p.cloth {
+        letter-spacing: 4px;
+        margin: 0 auto 2rem;
+    }
+    div.smallShoppingImage {
+        width: 200px;
+        height: 250px;
+    }
+    p.plain {
+        font-size: .95rem;
+        letter-spacing: 0px;
+    }
+    p.shopAll {
+        padding: 5rem 0 0 0;
+    }
+    div#ideas {
+        width: 85%;
+    }
+    p.hey {
+        padding: 0 0 3rem 0;
+    }
+    p.talk {
+        font-size: 3rem;
+    }
+    p.if {
+        font-size: 2rem;
+    }
+    span.collab {
+        font-size: 2rem;
+    }
+    p.some-idea {
+        font-size: .75rem;
+        padding: 1.5rem;
+        line-height: 20px;
+        letter-spacing: 8px;
+    }
+    p.check-info {
+        padding: 3rem 3rem 0;
+        letter-spacing: 10px;
+        line-height: 35px;
+    }
+    div.info-collections {
+        width: 85%;
+    }
+    div.info-collections > p.textz {
+        font-size: 1.5rem;
+    }
+    p.some-info {
+        font-size: .75rem;
+        line-height: 20px;
+        letter-spacing: 8px;
+    }
+    a > span.top {
+        font-size: 1.5rem;
+    }
+    div.pic-info1 {
+        top: -90px;
+        left: 0;
+        width: 80px;
+        height: 150px;
+    }
+    div.pic-info2 {
+        top: 50px;
+        left: 390px;
+        width: 90px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        margin: 1rem 2rem;
+    }
+    p.shoplink>a, p.cart>a {
+        letter-spacing: 0px;
+        font-size: .8rem
+    }
+    p.headerlogo>a {
+        letter-spacing: 2px;
+        font-size: .85rem;
+    }
+    div.cartitems {
+        width: 80px;
+    }
+    p.cart, p.cart>a {
+        font-size: .75rem;
+        letter-spacing: 1px;
+    }
+    div.barline,
+    div.barline:before {
+        width: 15px;
+    }
+    div.top-section {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    div.checkmore {
+        width: 180px;
+        height: 180px;
+        margin: 1.5rem 0 0 2rem;
+    }
+    p.check>a {
+        font-size: .75rem;
+        letter-spacing: 2px;
+    }
+    a >img.arrow-right {
+        margin: 0 0 .8rem -1rem;
+    }
+    div.slantline {
+        left: 80px;
+    }
+    p.sarah {
+        margin: auto;
+    }
+    p.meet > a {
+        letter-spacing: 4px;
+        display: flex;
+        padding: 2rem 2rem;
+        position: relative;
+        top: 160px;
+        font-size: .85rem;
+    }
+    div.bottom-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "a b";
+    }
+    p.present {
+        margin: -9rem 5rem 0 3.5rem;
+    }
+    p.select {
+        margin: 1rem 3.5rem;
+    }
+    div.check-story {
+        justify-content: flex-start;
+    }
+    div.social-text,
+    div.social-text2 {
+        margin: 1rem 2rem;
+    }
+    p.just-a-bit {
+        padding: 3rem 2rem 0;
+        letter-spacing: 6px;
+        line-height: 28px;
+    }
+    div.collections {
+        margin: 2rem auto 0;
+    }
+    a > img.arrow-down {
+        width: 25px;
+        height: 35px;
+    }
+    div.pic1 {
+        width: 95px;
+    }
+    div.pic2 {
+        top: 16px;
+        left: 244px;
+        width: 64px;
+        height: 85px;
+    }
+    div.pic3 {
+        top: 20px;
+        right: 11px;
+        width: 100px;
+    }
+    div.pic4 {
+        width: 100px;
+        margin: 0 0 0 0.8rem;
+        bottom: -140px;
+    }
+    div.video-key > a {
+        width: 150px;
+        height: 150px;
+    }
+    p.pressplay {
+        font-size: .75rem;
+    }
+    p.some-text {
+        line-height: 22px;
+        letter-spacing: 2px;
+    }
+    div.pic5 {
+        top: -35px;
+        right: 0;
+        width: 120px;
+        height: 145px;
+    }
+    section#Products {
+        padding: 4rem 0 5rem;
+    }
+    div.products-category {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    p.category > a {
+        font-size: 2.5rem;
+        line-height: 60px;
+    }
+    div.shopping-area {
+        display: flex;
+        flex-direction: column;
+    }
+    div.bigShoppingImage {
+        width: 100%;
+        height: 400px;
+    }
+    div.shoppingImg2 {
+        border: 1px dashed rgb(70, 70, 70, .5);
+        padding: 2rem;
+    }
+    p.shopAll {
+        padding: 2rem 0 0 0;
+    }
+    div#ideas {
+        width: 90%;
+    }
+    p.some-idea {
+        letter-spacing: 4px;
+    }
+    p.check-info {
+        padding: 3rem 2rem 0;
+        letter-spacing: 6px;
+        line-height: 28px;
+    }
+    div.info-collections {
+        margin: 2rem auto 0;
+    }
+    p.some-info {
+        line-height: 22px;
+        letter-spacing: 2px;
+        padding: 1.5rem 1rem;
+    }
+    div.pic-info2 {
+        top: 20px;
+        left: 300px;
+        width: 100px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        margin: 1rem .7rem;
+    }
+    p.shoplink>a, p.cart>a {
+        font-size: .7rem
+    }
+    p.meet > a {
+        letter-spacing: 4px;
+        padding: 2rem 1rem;
+        font-size: .8rem;
+    }
+    p.present {
+        margin: -9rem 3rem 0 2rem;
+    }
+    p.select {
+        margin: .1rem 2rem;
+    }
+    p.story>a {
+        font-size: 1.4rem;
+    }
+    p.hey-sarah {
+        font-size: 2.89rem;
+    }
+    p.designer {
+        font-size: 1.89rem;
+    }
+    span.about {
+        font-size: 1.89rem;
+    }
+    p.just-a-bit {
+        letter-spacing: 5px;
+        line-height: 24px;
+    }
+    div.pic1 {
+        top: -46px;
+        right: 15px;
+    }
+    div.pic2 {
+        top: 11px;
+        left: 213px;
+    }
+    div.pic3 {
+        top: 56px;
+        right: 5px;
+    }
+    section#shopping-category {
+        padding: 2rem 0rem;
+    }
+    div.bigShoppingImage {
+        width: 90%;
+        height: 400px;
+    }
+    p.talk {
+        font-size: 2.89rem;
+    }
+    p.if {
+        font-size: 1.89rem;
+    }
+    span.collab {
+        font-size: 1.89rem;
+    }
+    div.pic-info2 {
+        left: 245px;
+        width: 125px;
+    }
+}
+
+@media (max-width: 360px) {
+    p.present {
+        margin: -9rem 3rem 0 1.5rem;
+    }
+    div.pic-info2 {
+        left: 230px;
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        margin: 1rem auto;
+        justify-content: space-evenly;
+    }
+    p.shoplink>a {
+        display: none;
+    }
+    p.headerlogo>a {
+        letter-spacing: 2px;
+        font-size: .8rem;
+    }
+    div.cartitems {
+        margin-right: 20px;
+    }
+    div.barline, div.barline:before {
+        top: -5px;
+    }
+    p.sarah {
+        font-size: 2.89rem;
+    }
+    p.meet > a {
+        padding: 1rem;
+    }
+    p.present {
+        font-size: 2.89rem;
+        margin: -6rem 0rem 0 2rem;
+    }
+    p.select {
+        margin: 1rem 2rem;
+    }
+    p.story>a {
+        line-height: 25px;
+    }
+    div.social-text, div.social-text2 {
+        margin: 1rem;
+    }
+    p.hey-sarah {
+        font-size: 2.47rem;
+    }
+    p.designer {
+        font-size: 1.61rem;
+    }
+    span.about {
+        font-size: 1.61rem;
+    }
+    p.just-a-bit {
+        letter-spacing: 3px;
+    }
+    div.pic1 {
+        top: -65px;
+        right: 11px;
+    }
+    div.pic2 {
+        left: 170px;
+        z-index: 999;
+    }
+    div.pic3 {
+        top: 32px;
+    }
+    div.pic5 {
+        top: -43px;
+        right: 0;
+        width: 95px;
+        height: 116px;
+    }
+    p.my-products {
+        padding: 0 0 2rem 1.5rem;
+    }
+    p.clothing {
+        line-height: 35px;
+    }
+    div.products-category {
+        padding: 0 1.5rem;
+    }
+    p.talk {
+        font-size: 2.47rem;
+    }
+    p.if {
+        font-size: 1.61rem;
+    }
+    span.collab {
+        font-size: 1.61rem;
+    }
+    div.pic-info2 {
+        left: 210px;
+        width: 96px;
+    }
 }
